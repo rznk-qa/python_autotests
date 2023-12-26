@@ -7,7 +7,7 @@ response = requests.post(url='https://api.pokemonbattle.me:9104/pokemons',
                    },
                headers={
                    'Content-Type': 'application/json', 
-                  'trainer_token':'85fe0c5e4dc5e06435871f65fa4e2a8a'
+                  'trainer_token':'#YOUR_TOKEN'
                        })
 print(f'Code:{response.status_code} {response.reason}. Message:{response.text}')
 
@@ -20,7 +20,7 @@ response = requests.put(url='https://api.pokemonbattle.me:9104/pokemons',
                     },
                headers={
                    'Content-Type': 'application/json', 
-                   'trainer_token':'85fe0c5e4dc5e06435871f65fa4e2a8a'
+                   'trainer_token':'#YOUR_TOKEN'
                        })
 print(f'Code:{response.status_code} {response.reason}. Message:{response.text}')
 
@@ -29,6 +29,6 @@ response = requests.post(url='https://api.pokemonbattle.me:9104/trainers/add_pok
               {"pokemon_id": "19435"},
                headers={
                   'Content-Type': 'application/json', 
-                   'trainer_token':'85fe0c5e4dc5e06435871f65fa4e2a8a'
+                   'trainer_token':'#YOUR_TOKEN'
                        })
 print(f'Code:{response.status_code} {response.reason}. Message:{response.text}')
